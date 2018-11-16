@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 網頁icon -->
+    <link rel="shortcut icon" href="icon/hex.ico">
+    <!-- 關鍵字搜尋 -->
+    <meta name="description" content="成為前端工程師的基礎課程">
+    <meta name="keywords" content="六角,六角學院,前端,前端開發">
+    <!-- fackbook -->
+    <meta property="og:title" content="六角學院">
+    <meta property="og:description" content="成為前端工程師的基礎課程">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hexschool.com/">
+    <meta property="image" content="image/logo.png">
+    <!-- =======
+    ==css link==
+    ========= -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/Animate.css">
+    <!-- nivo-slider css -->
+    <link rel="stylesheet" href="css/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="css/lightbox/lightbox.min.css">
+
+    <!-- js_files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/all.js"></script>
+
+    <title>Hex School六角學院</title>
+</head>
+
+<body>
+    <!-- go top -->
+    <div class="top js-Top">
+        <a href="#">↑Top</a>
+    </div>
+    <div class="wrap">
+        <div class="header">
+            <div class="sociallink">
+                <ul>
+                    <li class="facebook">
+                        <a href="https://www.facebook.com/hexschool/"><img src="image/facebook.png" alt="">粉絲團</a>
+                    </li>
+                    <li class="twitter">
+                        <a href="https://twitter.com/?lang=zh-tw"><img src="image/twitter.png" alt="">聯絡我們</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="topmenu">
+                <!-- logo animated -->
+                <h1><a class="logo animated" href="index.html">Hex School</a></h1>
+                <div class="main">
+                    <ul>
+                        <li>
+                            <a href="index.html">首頁</a>
+                        </li>
+                        <!-- 下拉式選單 -->
+                        <li class="second-layer js-SlideToggle">
+                            <a href="#">產品介紹</a>
+                            <ul>
+                                <li>
+                                    <a href="https://www.udemy.com/html-css-learning/learn/v4/t/lecture/5654548?start=1">Html 5 基礎教學</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.udemy.com/responsive/learn/v4/t/lecture/5767714?start=0">響應式網站設計</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.udemy.com/jquery-learning/learn/v4/content">jQuery實戰教學</a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <a href="https://www.hexschool.com/qa/">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- vino-slider -->
+            <!-- === Nivo-slider ===-->
+
+            <div class="banner js-NivoSlider">
+                <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <img src="image/opera.JPG" data-thumb="image/opera.JPG" alt="syndey opera house" title="Photo credit: 李聖強(LI,SHENG-QIANG)" />
+                        <img src="image/airport.JPG" data-thumb="image/airport.JPG" alt="airport" title="Photo credit: 李聖強(LI,SHENG-QIANG)" />
+                        <img src="image/museum.JPG" data-thumb="image/museum.JPG" alt="museum" title="Photo credit: 李聖強(LI,SHENG-QIANG)" />
+                        <img src="image/sunset1.JPG" data-thumb="image/sunset1.JPG" alt="sunset" title="Photo credit: 李聖強(LI,SHENG-QIANG)" />
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="intro js-Lightbox">
+            <ul>
+                <li class="card1">
+                    <a class="lesson animated" href="image/html5.png" data-lightbox="example1">
+                        <img src="image/html5.png" alt="">
+                    </a>
+                    <h2>Html 5 基礎教學</h2>
+                    <span>主流前端網站設計的基礎在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</span>
+                </li>
+                <li class="card2">
+                    <a class="lesson animated" href="image/rwd.png" data-lightbox="example2">
+                        <img src="image/rwd.png" alt="">
+                    </a>
+                    <h2>響應式網站設計</h2>
+                    <span><span class="rwd">響應式網站設計</span>(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。</span>
+                </li>
+                <li class="card3">
+                    <a class="lesson animated" href="image/jquery.png" data-lightbox="example3">
+                        <img src="image/jquery.png" alt="">
+                    </a>
+                    <h2>jQuery實戰教學</h2>
+                    <span>本課程有以下特色</span>
+                    <ul>
+                        <li>・了解變數的使用方法</li>
+                        <li>・學習並操作DOM</li>
+                        <li>・學習基本數學運算方法</li>
+                        <li>・套件的操作及運用</li>
+                    </ul>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+
+        <h2 class="compare-title">線上及實體課程的差異</h2>
+        <table class="compare-table">
+
+            <tr>
+                <th>項目</th>
+                <th>Hex School 線上課程</th>
+                <th>一般線上課程</th>
+                <th>實體課程</th>
+            </tr>
+            <tr>
+                <td>費用</td>
+                <td class="green">較低</td>
+                <td class="green">較低</td>
+                <td>較高</td>
+            </tr>
+            <tr>
+                <td>學習效果</td>
+                <td>一般</td>
+                <td class="green">較低</td>
+                <td class="green">很好</td>
+            </tr>
+            <tr>
+                <td>Code review</td>
+                <td class="green">有</td>
+                <td>無</td>
+                <td>不一定</td>
+            </tr>
+            <tr>
+                <td>課程更新速度</td>
+                <td class="green"> 普通</td>
+                <td class="green">普通</td>
+                <td>較慢</td>
+            </tr>
+            <tr>
+                <td>多次複習</td>
+                <td class="green">可</td>
+                <td>可</td>
+                <td>不可</td>
+            </tr>
+            <tr>
+                <td>字幕</td>
+                <td class="green">有</td>
+                <td>不一定</td>
+                <td>板書</td>
+            </tr>
+        </table>
+
+        <form class="personal-data-form" action="index.html">
+            <h2>對我們課程有興趣嗎？<br>歡迎留下您的資料</h2>
+            <div class="secret">
+                <label for="content">悄悄話:</label>
+                <textarea name="內容" id="content" cols="60" rows="15" placeholder="如果有任何疑問，歡迎留言提問！"></textarea>
+            </div>
+            <div class="form-content">
+                <label for="name">姓名:</label>
+                <input type="text" name="姓名" id="name" placeholder="請輸入姓名">
+                <label for="phone">電話:</label>
+                <input type="text" name="電話" id="phone" placeholder="請輸入電話號碼">
+                <label for="e-mail">電子信箱:</label>
+                <input type="text" name="電子信箱" id="e-mail" placeholder="請輸入E-mail">
+
+                <input type="submit" id="submit" value="送出">
+            </div>
+            <div class="clearfix"></div>
+
+        </form>
+        <div class="footer">
+            <img src="image/footerlogo.png" alt="">
+            <div>
+                <span>聯絡我們:</span><span class="red"> hexschool@gmail.com</span>
+                <br>
+                <span>電話:</span><span class="red"> 0999123456</span>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+    </div>
+    <div class="ad">
+        <a href="#" class="close">
+            關閉
+        </a>
+    </div>
+    <script type="text/javascript" src="js/lightbox/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="js/nivo-slider/jquery.nivo.slider.js"></script>
+
+</body>
+
+</html>

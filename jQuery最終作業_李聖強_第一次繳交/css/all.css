@@ -1,0 +1,594 @@
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* my code */
+    /* wrap */
+    
+    .wrap {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    @media(max-width: 375px) {
+        .wrap {
+            width: 100%;
+            margin-left: 20px;
+        }
+    }
+    /* .header */
+    
+    .header {
+        margin-bottom: 20px;
+    }
+    /* sociallink */
+    
+    .sociallink {
+        background: #f6f6f6;
+        padding-bottom: 10px;
+    }
+    
+    .sociallink ul {
+        float: right;
+        padding-top: 3px;
+    }
+    
+    .sociallink li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .sociallink li a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+    .facebook a {
+        color: #4460a0;
+        border-right: 1px solid #cccccc;
+        padding-right: 8px;
+    }
+    
+    .twitter a {
+        color: #00aaec;
+    }
+    
+    .sociallink img {
+        margin-right: 5px;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    .sociallink li a:hover {
+        color: rgb(112, 155, 180);
+    }
+    
+    @media(max-width:768px) {
+        .sociallink {
+            width: 100%;
+        }
+    }
+    /* topmenu */
+    
+    .topmenu {
+        background-color: white;
+        padding-bottom: 2px;
+        /* =============
+        for slidedown
+        ============= */
+        /* height: 76px; */
+    }
+    
+    .topmenu h1 {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 18px;
+        float: left;
+    }
+    
+    .topmenu h1 a {
+        background-image: url(../image/logo.png);
+        display: block;
+        width: 170px;
+        height: 36px;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .main {
+        float: right;
+    }
+    
+    .main>ul>li {
+        float: left;
+    }
+    
+    .main a {
+        display: block;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        padding-top: 32px;
+        padding-bottom: 26px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .topmenu li a:hover {
+        color: #42d3a9;
+        background-color: rgba(226, 223, 223, 0.1)
+    }
+    
+    @media(max-width:375px) {
+        .topmenu li a {
+            font-size: 12px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    /* ==================
+    ==== second-layer ===
+    ================== */
+    
+    .second-layer ul {
+        position: absolute;
+        z-index: 500;
+        width: 150px;
+        display: none;
+        background: white;
+    }
+    
+    .second-layer>ul a {
+        padding: 10px;
+    }
+    /* introduction */
+    
+    .intro>ul {
+        width: 993px;
+        margin-left: 16px;
+    }
+    
+    .intro>ul>li {
+        float: left;
+        width: 288px;
+        height: 325px;
+        border: 1px solid #f1f1f1;
+        margin-right: 25px;
+        padding: 0 8px;
+        box-shadow: 0 3px 3px gray;
+        margin-bottom: 50px;
+    }
+    
+    .intro li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    
+    .intro li a:hover {
+        color: rgb(145, 141, 141);
+    }
+    
+    .card1 img {
+        width: 121px;
+        height: 136px;
+        padding-left: 90px;
+        padding-top: 20px;
+    }
+    
+    .card1 h2 {
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .card1 span {
+        display: block;
+        line-height: 1.5;
+    }
+    
+    .card2 img {
+        width: 221px;
+        height: 81px;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .card2 h2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .card2 span {
+        line-height: 1.5;
+    }
+    
+    .rwd {
+        letter-spacing: 5px;
+    }
+    
+    .card3 img {
+        width: 114px;
+        height: 118px;
+        padding-left: 90px;
+        padding-top: 30px;
+    }
+    
+    .card3 h2 {
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .card3 span {
+        display: block;
+        padding-bottom: 8px;
+    }
+    
+    .card3 li {
+        line-height: 1.2;
+        padding-left: 10px;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    @media(max-width:786px) {
+        .intro>ul {
+            width: 100%;
+            padding-left: 20px;
+        }
+        .intro>ul>li {
+            float: none;
+        }
+    }
+    /* table */
+    
+    .compare-title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .compare-table {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    .compare-table tr {
+        font-size: 16px;
+        color: black;
+        text-align: left;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .compare-table th {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px;
+        background-color: #f7f7f7;
+    }
+    
+    .compare-table td {
+        padding: 8px;
+    }
+    
+    .green {
+        color: #13c296;
+    }
+    
+    @media(max-width:375px) {
+        .compare-title {
+            font-size: 16px;
+        }
+        .compare-table {
+            width: 100%;
+        }
+        .compare-table tr {
+            font-size: 12px;
+        }
+        .compare-table th {
+            font-size: 12px;
+        }
+        .compare-table td {
+            padding: 4px;
+        }
+    }
+    /* form */
+    
+    .personal-data-form {
+        background-image: url(../image/form-bg.png);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .personal-data-form h2 {
+        font-size: 20px;
+        color: white;
+        line-height: 1.5;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .secret {
+        float: left;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    
+    .secret textarea {
+        resize: none;
+    }
+    
+    .form-content {
+        float: right;
+        padding-right: 60px;
+    }
+    
+    .personal-data-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .personal-data-form input {
+        display: block;
+        width: 400px;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    
+    .personal-data-form #submit {
+        width: 60px;
+        height: 20px;
+        background: #00cc99;
+        color: white;
+        margin-left: 350px;
+        padding-bottom: 22px;
+    }
+    
+    .personal-data-form #submit:hover {
+        background: #35e9bc;
+        cursor: pointer;
+    }
+    
+    @media(max-width:375px) {
+        .personal-data-form h2 {
+            font-size: 10px;
+        }
+        .secret textarea {
+            width: 100px;
+            height: 100px;
+        }
+        .personal-data-form input {
+            width: 80%;
+            font-size: 6px;
+        }
+        .form-content {
+            margin-left: 0px;
+            padding-right: 0px;
+            margin-right: 30px;
+        }
+        .personal-data-form #submit {
+            margin-left: 0px;
+        }
+    }
+    /* footer */
+    
+    .footer {
+        height: 50px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .footer img {
+        width: 170px;
+        height: 36px;
+        float: left;
+    }
+    
+    .footer div {
+        float: right;
+    }
+    
+    .footer span {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .footer .red {
+        color: red;
+    }
+    /* =========
+    go to top
+    ========= */
+    
+    .top {
+        position: fixed;
+        bottom: 5px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: wheat;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .top a {
+        display: block;
+        text-decoration: none;
+    }
+    /* ===============
+     commercial ad 
+     ============= */
+    
+    .ad {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background-image: url("https://udemy-images.udemy.com/course/480x270/931516_cb26_2.jpg");
+        background-size: cover;
+    }
+    
+    .close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: gray;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 5px;
+    }
